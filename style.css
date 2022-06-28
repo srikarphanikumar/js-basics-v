@@ -1,0 +1,45 @@
+body {
+    margin-bottom: 500px
+}
+
+.p-tag {
+  background-color: black;  
+  color: white;
+}
+
+
+#h6-header {
+    background-color: yellow;
+}
+
+.h2-tag {
+    background-color: red;
+}
+
+#h2 {
+    background-color: yellow;
+}
+
+.h2-font-styles {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.font-weight {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.js-logo-styles {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    width: auto;
+    height: auto;
+}
