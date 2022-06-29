@@ -29,6 +29,7 @@ body {
 .font-weight {
     font-weight: 500;
     font-size: 25px;
+    background-color: red;
 }
 
 .js-logo-styles {
@@ -42,4 +43,57 @@ body {
     font-size: 20px;
     width: auto;
     height: auto;
+}
+
+.main-div {
+    display: none;
+    /* visibility: hidden; */
+}
+
+.margin-border {
+    /* border: border-width border-style border-color */
+    border: 2px solid blue;
+    border-radius: 5px; 
+    /* border-top: 5px solid red;
+    border-right: 5px solid blue;
+    border-left: 5px solid green;
+    border-bottom: 5px solid purple; */
+
+
+    /* Margin: Used to control space around the element (outside) */
+    /* 
+        Shorthand: 
+        margin: singleValue;
+        this will take value on all the 4 sides
+        4 sides: top, bottom, right, left
+    */
+    /* margin: 20px; */ 
+
+    /* Individual Values */
+    /* 
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 30px;
+        margin-bottom: 40px; 
+    */
+
+    /* 
+        remember as clockwise notation
+        margin: top left bottom right (TRBL)
+    */
+    /* margin: 20px 30px 40px 50px; */
+
+    
+    /* margin: top&bottom right&left */
+    /* margin: 10px 20px; */
+
+    /* margin: top right&left bottom */
+    margin: 10px 20px 30px;
+
+
+    /* Padding: used to control space inside the element */
+    /* padding: 10px; */ 
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 10px 20px 30px; */
+    padding: 10px 20px;
 }
