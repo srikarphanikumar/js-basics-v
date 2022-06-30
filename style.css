@@ -20,6 +20,15 @@ body {
     background-color: yellow;
 }
 
+ul {
+    /* list-style: none; */
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: none;
+}
+
 .h2-font-styles {
     font-size: 30px;
     font-style: italic;
@@ -96,4 +105,38 @@ body {
     /* padding: 10px 20px 30px 40px; */
     /* padding: 10px 20px 30px; */
     padding: 10px 20px;
+}
+
+.flex-model {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    flex-direction: row;
+    /* flex-direction: row-reverse; */
+    max-width: 600px;
+
+    /* Align items along y-axis */
+    /* align-items: center: will align items equally from top and bottom */
+    align-items: center; 
+
+
+    /* justify-content along x-axis */
+    justify-content: flex-end; 
+
+    flex-wrap: wrap;
+
+}
+
+.flex-model .first,
+.flex-model .second,
+.flex-model .third {
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    margin: 10px;
+    padding: 50px;
+    font-size: 20px;
 }
