@@ -140,3 +140,50 @@ ol {
     padding: 50px;
     font-size: 20px;
 }
+
+.circle {
+    margin: 60px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+    border-radius: 10%;
+    display: none;
+}
+
+/* .triangle {
+    height: 0;
+    width: 0;
+    margin: 30%;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 60px solid green;
+} */
+
+.eg-w-h {
+    /* margin: 40px; */
+    border: 2px dashed red;
+    /* 
+        width: 50vw
+        height: 50vh
+    */
+    width: 50px;
+    height: 50px;
+    padding: 30%;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    font-style: italic;
+}
+
+/* .sample {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* Psuedo elements */
+
+.eg-w-h:hover {
+    background-color: blue;
+    color: red;
+    cursor: pointer;
+}
