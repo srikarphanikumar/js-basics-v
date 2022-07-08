@@ -187,3 +187,23 @@ ol {
     color: red;
     cursor: pointer;
 }
+
+.form-fields {
+    border: 2px solid red;
+    padding: 40px;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    /* border: none; */
+}
+
+/* legend {
+    font-size: 24px;
+    font-weight: bold;
+} */
