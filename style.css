@@ -1,3 +1,8 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
 body {
     margin-bottom: 500px
 }
@@ -180,14 +185,6 @@ ol {
     flex-direction: row;
 } */
 
-/* Psuedo elements */
-
-.eg-w-h:hover {
-    background-color: blue;
-    color: red;
-    cursor: pointer;
-}
-
 .form-fields {
     border: 2px solid red;
     padding: 40px;
@@ -207,3 +204,71 @@ fieldset {
     font-size: 24px;
     font-weight: bold;
 } */
+
+.btn-input, .btn-button {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-style: normal;
+    cursor: pointer;
+}
+
+/* Psuedo elements */
+
+.eg-w-h:hover {
+    background-color: blue;
+    color: red;
+    cursor: pointer;
+}
+
+.btn-input:hover {
+    background-color: red;
+    color: blue;
+}
+
+.btn-button:disabled {
+    cursor: not-allowed;
+}
+
+a:hover {
+    color: red;
+}
+
+.main-div-a {
+    display: flex;
+}
+
+.main-div-a .a {
+    width: 200px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+.main-div-a .a:nth-child(2n+1) {
+    background-color: blue;
+}
+
+.main-div-a .a:nth-child(2n) {
+    background-color: red;
+}
+
+.main-div-a .a:first-child {
+    color: red;
+}
+
+.main-div-a .a:last-child {
+    color: blue;
+}
+
+p.sample::first-line {
+    color: red;
+}
+
+p.sample::first-letter {
+    font-size: 24px;
+    color: black;
+}
