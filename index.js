@@ -17,6 +17,11 @@ console.log('*****************************')
  * 7) undefined 
 */
 
+/**
+ * Loops (for, while, do-while)
+ * and conditions (if, else-if-else, switch, ternary operators)
+ */
+
 // Define a variable
 
 // var, let, const
