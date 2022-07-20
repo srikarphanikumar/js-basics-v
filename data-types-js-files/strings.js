@@ -23,7 +23,31 @@ console.log('Para1: ', para1);
  * 4) CharAt(): gives you a character at a specified index--------
  * 5) indexOf(): gives you first index of a particular character---
  * 6) concat() and +
+ * 7) slice()
+ * 8) split();
+ * 9) replace()
+ * 10) lastIndexOf()
  */
+
+
+/** 
+ * Practice Question
+ * Given string1 = 'Hello, I live in Hyderabad, which is in India';
+ * Given string2 = 'India is a part of Asia'
+ * 
+ * 
+ * find character at 10th position in string1 & string2
+ * find index of the word 'India' in string1 & string2
+ * join 2 strings
+ * Retrieve the words: 'I live in Hyderabad' from string1
+ * Retrieve the word: 'is a part of' from string2
+ * Calculate number of words in string1 & string2
+ * 
+ *  Replace india with usa and asia with north america
+ * 
+ *  find last index of the letter 'a' in string1 and string2
+ */
+
 
  console.log('********* LENGTH ************')
 //length
@@ -75,6 +99,10 @@ console.log('Str2 indexOf - z: (not in str) ', str2.indexOf('z'));
 var para2 = 'this is a javascript basics course';
 console.log('para2: ', para2);
 console.log('para2 indexOf - javascript: ', para2.indexOf('javascript'));
+
+// lastIndexOf();
+console.log('Str2 last indexOf - a: ', str2.lastIndexOf('a'));
+
 console.log('                              ');
 
 
@@ -96,3 +124,52 @@ console.log('FullNameBackWards: ', fullNameBackWards);
 var fullNameUsingSecondWay = firstName + ' ' + lastName;
 console.log('Full Name using second-way: ', fullNameUsingSecondWay);
 console.log('                              ');
+
+
+console.log('********* SLICE ************')
+//slice: retrieve a part of the string
+/** 
+ *  two arguments: 
+    1) starting value 
+    2) ending value (but returns until endingValue-1)
+*/ 
+var superCar = 'Supercar';
+console.log('Supercar: ', superCar);
+console.log('First 5 characters: ', superCar.slice(0,5)); // super
+console.log('3-6 characters: ', superCar.slice(3,6)); // erc
+console.log('                              ');
+
+
+console.log('********* Split ************')
+//split
+var para3 = 'Hi How are you?';
+console.log('para3: ', para3);
+var numberOfWords = para3.split(' ');
+console.log('numberOfWords: ', numberOfWords);
+
+var url = 'https://www.microsoft.com/en-us?token=abc123';
+console.log('Url: ', url);
+var languageArray = url.split('/');
+console.log('LanguageArray: ', languageArray);
+var language = languageArray[languageArray.length-1];
+console.log('language: ', language);
+
+var token = url.split('?');
+console.log('Token: ', token)
+console.log('                              ');
+
+
+console.log('********* Replace ************')
+
+// replaces first instance of target character/element with intended replacement 
+// character/element
+var originalStr = 'pittsburgh';
+var replacedStr = originalStr.replace('t', 'f');
+console.log('originalStr: ', originalStr);
+console.log('replacedStr: ', replacedStr);
+
+var allTsReplacedWithFs = originalStr.replaceAll('t', 'f')
+console.log('allTsReplacedWithFs: ', allTsReplacedWithFs);
+
+console.log('                              ');
+
